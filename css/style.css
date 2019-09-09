@@ -85,12 +85,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-nav {
-  position: absolute;
+  /* position: absolute; */
+  background-color: #252525;
   top: 0;
   margin: 0;
   padding: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   z-index: 1001;
 }
 @media screen and (max-width: 768px) {
@@ -134,7 +135,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.5s;
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+  color: #F08700;
 }
 .fh5co-nav ul li.has-dropdown {
   position: relative;
@@ -193,7 +194,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
-  color: #fff;
+  color: #F49F0A;
 }
 .fh5co-nav ul li.btn-cta a {
   color: #F08700;
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff !important;
+  color: #F49F0A !important;
 }
 
 #fh5co-counter,
@@ -296,7 +297,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-cover {
-  height: 900px;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -322,7 +323,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
-  height: 900px;
+  height: 100vh;
   display: table;
   width: 100%;
 }
@@ -1642,6 +1643,11 @@ form label {
   .fh5co-nav-toggle {
     display: block;
   }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .btn {

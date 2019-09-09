@@ -228,5 +228,29 @@
 		counterWayPoint();
 	});
 
+    window.onscroll = function() {stickyNav()};
+
+var navbarYCoord = document.getElementById("navbar");
+var sticky = navbarYCoord.offsetTop;
+let divPaddingTop = $('#fh5co-couple').css('padding-top')
+
+let navHeight = $('#navbar').css('height')
+let navHeightInt = parseInt(navHeight.substr(0, (navHeight.length)-2), 10)
+let divPaddingTopInt = parseInt(divPaddingTop.substr(0, (divPaddingTop.length)-2), 10)
+
+let whatever = navHeightInt + divPaddingTopInt ;
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+	
+	navbarYCoord.classList.add("sticky")
+	
+	document.getElementById("fh5co-couple").style.paddingTop=whatever+"px"
+  } else {
+
+	navbarYCoord.classList.remove("sticky");
+		document.getElementById("fh5co-couple").style.paddingTop=whatever-navHeightInt+"px"
+
+  }
+}
 
 }());

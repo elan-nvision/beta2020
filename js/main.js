@@ -252,5 +252,12 @@ function stickyNav() {
 
   }
 }
+let timelinePanel=document.getElementsByClassName("timeline-panel");
+var i;
+for(i=0; i < timelinePanel.length; i=i+2)
+{
+	var panelHeight = timelinePanel[i].clientHeight;
+	timelinePanel[i+1].style.height=panelHeight+'px';
+}
 
 }());

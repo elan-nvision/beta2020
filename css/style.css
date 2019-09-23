@@ -105,6 +105,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-left: 2rem;
   padding: 0;
   line-height: 40px;
+  font-family: 'Mansalva', cursive;
 
 }
 .fh5co-nav a {
@@ -480,7 +481,7 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
 }
 .timeline > li > .timeline-panel,.timeline > li.timeline-inverted > .timeline-panel.timeline-image {
-  width: 40%;
+  width: 44%;
   float: left;
   border: 1px solid #d4d4d4;
   padding: 30px;
@@ -492,7 +493,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom:1rem;
   margin-top:1rem;
   margin-right: 0;
-  margin-left:7%;
+  margin-left:3%;
 }
 .timeline > li > .timeline-panel:before,.timeline > li.timeline-inverted > .timeline-panel.timeline-image:before {
   position: absolute;
@@ -563,7 +564,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .timeline > li.timeline-inverted > .timeline-panel, .timeline > li > .timeline-panel.timeline-image {
   float: right;
-  margin-right: 7%;
+  margin-right: 3%;
   margin-left:0;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before, .timeline > li > .timeline-panel.timeline-image:before {
@@ -1883,3 +1884,46 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+@media screen and (max-width: 768px) {
+  .timeline-desktop {
+    display: none;
+  }
+}
+
+.timeline-card
+{
+  display: inline-block;
+  width:86%;
+  border: 1px solid #d4d4d4;
+  
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom:1rem;
+  margin-top:1rem;
+  margin-right: 0;
+  margin-left:7%;
+}
+.timeline-text
+{
+  padding: 30px;
+}
+@media screen and (min-width: 769px) {
+  .timeline-card {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .timeline-card {
+    width: 44%;
+    margin-left:4%;
+  }
+}
+.timeline-card img
+{
+  width:100%;
+}

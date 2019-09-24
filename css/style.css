@@ -1983,3 +1983,13 @@ form label {
 .timeline-card img {
   width: 100%;
 }
+.coords h3,.coords p{
+  margin-bottom: 0;;
+}
+.coords{
+  margin-top: 3rem;
+}
+.coord-name
+{
+  color: #444242;
+}

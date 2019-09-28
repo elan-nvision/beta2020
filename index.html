@@ -46,7 +46,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
-
+	<link rel="stylesheet" href="css/infinite-slider.css">
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -314,6 +314,31 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div id="fh5co-gallery" class="fh5co-section-gray">
+		<div class="container">
+				<div class="row">
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+							<!-- <span>Our Memories</span> -->
+							<h2>Sponsors</h2>
+							<p>Unforgettable performances from artists all over the world</p>
+						</div>
+					</div>
+			<section class="customer-logos slider">
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			  <div class="slide"><img src="images/bulb.png"></div>
+			</section>
+		  </div>
 	</div>
 	<a name="pronitesLink"></a>
 	<div id="fh5co-gallery" class="fh5co-section-gray">
@@ -718,6 +743,32 @@
 	<script src="js/main.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script>
+	$(document).ready(function(){
+  $('.customer-logos').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 4
+      }
+    }, {
+      breakpoint: 520,
+      settings: {
+        slidesToShow: 3
+      }
+    }]
+  });
+});
+</script>
 	<script>
 		$(document).ready(function () {
 			$('nav').localScroll({ duration: 800 });

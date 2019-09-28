@@ -348,6 +348,12 @@ h1, h2, h3, h4, h5, h6, figure {
   z-index: 10;
 }
 
+@media screen and (min-width:769px) {
+  .container.longer {
+    width: 90%
+  }
+}
+
 .fh5co-cover .display-t, .fh5co-cover .display-tc {
   height: 100vh;
   display: table;
@@ -452,7 +458,38 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
 }
 
-#fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span, #fh5co-event .event-wrap p, #fh5co-event .event-wrap span {
+.ca-wrap {
+  padding: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .ca-wrap {
+    padding: 0px;
+  }
+}
+
+.ca-portal {
+  background-image: url('../images/campus-portal.jpeg');
+  height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .ca-portal {
+    background-image: url('../images/campus-portal-mob.jpeg');
+    height: 100%;
+  }
+}
+
+.ca-wrap a,.event-wrap a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  border-bottom: 3px solid #fff;
+  /* border-radius: 5px; */
+  padding: 5px;
+}
+
+#fh5co-counter .event-wrap p, #fh5co-counter .event-wrap span, #fh5co-event .event-wrap p, #fh5co-event .event-wrap span, .ca-wrap p {
   display: block;
   color: rgba(255, 255, 255, 0.8);
 }

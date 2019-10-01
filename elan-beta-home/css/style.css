@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 500px) {
-  .ca-portal {
+  #fh5co-event.ca-portal {
     background-image: url('../images/campus-portal-mob.jpeg');
     height: 100%;
     background-size: cover;

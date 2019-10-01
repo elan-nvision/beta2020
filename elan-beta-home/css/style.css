@@ -459,7 +459,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .ca-wrap {
-  padding: 50px;
+  padding: 40px;
 }
 
 @media screen and (max-width: 500px) {
@@ -468,10 +468,12 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+
 #fh5co-event.ca-portal {
   background-image: url('../images/campus-portal.png');
   height: 100%;
   background-size: 100% auto;
+  padding-top: 5em;
 }
 
 @media screen and (max-width: 500px) {

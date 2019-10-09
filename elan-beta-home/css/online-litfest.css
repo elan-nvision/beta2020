@@ -2289,3 +2289,7 @@ h3.contact-event
 {
   font-size:20px;
 }
+#page
+{
+  min-height: 100vh;
+}

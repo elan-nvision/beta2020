@@ -1,0 +1,413 @@
+/* ---- reset ---- */
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+/* ---- particles.js container ---- */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
+/* nav bar */
+
+header {
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 200;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(20, 19, 19);
+}
+
+.closeButton {
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.burgerIcon {
+  position: absolute;
+  top: 30px;
+  right: 36px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.burgerLine {
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.navMenu {
+  flex-flow: column wrap;
+  margin-top: 8em;
+}
+
+.navMenu li {
+  list-style: none;
+}
+
+.navMenu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  transition: 0.2s ease all;
+}
+
+.navMenu li:last-child a {
+  border-bottom: none;
+}
+
+.navMenu li:hover a {
+  border-bottom: 3px solid #142d5f;
+}
+
+/* Letter animation */
+
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400, 700);
+
+#wrapper h1 {
+  left: 50%;
+  margin: 0;
+  top: 20%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+#title {
+  font-weight: 700;
+  display: inline-flex;
+  margin: -5px;
+  padding: 5px;
+  color: #fff;
+  text-shadow:
+    /* 0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 10px #fff, */ 0 0;
+  /* 1px rgb(255, 0, 21),
+    0 0 5px rgb(255, 0, 21), 0 0 10px rgb(255, 0, 21), 0 0 30px rgb(255, 0, 21),
+    0 0 50px rgb(255, 0, 21); */
+}
+
+.title-letter {
+  font-size: calc(4vw + 1rem);
+  margin-left: -2px;
+}
+
+#sub-title {
+  font-weight: 400;
+  font-size: calc(0.4vw + 0.5rem);
+  letter-spacing: calc(0.3vw + 0.5rem);
+  text-transform: uppercase;
+  position: relative;
+  top: -5px;
+  text-shadow: 0 0 7px rgb(25, 0, 255), 0 0 12px rgb(25, 0, 255),
+    0 0 22px rgb(25, 0, 255);
+}
+.heading h1 {
+  color: white;
+  text-align: center;
+}
+#sub-title1 {
+  font-weight: 400;
+  font-size: calc(0.4vw + 0.5rem);
+  letter-spacing: calc(0.3vw + 0.5rem);
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: 0 0 7px rgb(10, 233, 47), 0 0 12px rgb(10, 233, 47),
+    0 0 22px rgb(10, 233, 47);
+  /* top: -5px; */
+}
+
+/* Opacity For Start */
+.title-letter,
+#sub-title,
+#sub-title1 {
+  opacity: 0;
+}
+@media (max-width: 767px) {
+  h1 {
+    margin-top: 1em !important;
+  }
+}
+
+/* bb css */
+.bb,
+.bb::before,
+.bb::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bb {
+  width: 200px;
+  height: 200px;
+  /* margin-top: 20em; */
+  padding: 0.6em;
+  margin: 2em auto;
+  /* display: none; */
+  color: rgb(240, 135, 0);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  position: relative !important;
+}
+.bb img {
+  margin: auto;
+  display: block;
+}
+.bb h3 {
+  margin-top: 1em;
+  vertical-align: bottom !important;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px !important;
+}
+.bb::before,
+.bb::after {
+  content: "";
+  z-index: 1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  animation: clipMe 8s linear infinite;
+}
+.bb::before {
+  animation-delay: -4s;
+}
+.bb:hover::after,
+.bb:hover::before {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@keyframes clipMe {
+  0%,
+  100% {
+    clip: rect(0px, 220px, 2px, 0px);
+  }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px);
+  }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px);
+  }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px);
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.homebutton,
+.backbutton {
+  position: fixed;
+  top: 2em;
+  height: 3em;
+  padding: 0.3em;
+  border-radius: 100%;
+  width: 3em;
+  cursor: pointer;
+  box-shadow: 0 0 18px 0px rgb(221, 224, 43) inset;
+}
+.homebutton {
+  left: -3em;
+}
+.backbutton {
+  right: -3em;
+}
+
+.homebutton img,
+.backbutton img {
+  width: 2em;
+  margin: auto;
+  margin-top: 5px;
+  display: block;
+}
+
+.out {
+  animation: outt 0.7s forwards;
+}
+@keyframes outt {
+  from {
+    left: -3em;
+  }
+  50% {
+    left: 1.7em;
+  }
+  100% {
+    left: 1em;
+  }
+}
+
+.in {
+  animation: inn 0.7s forwards;
+}
+@keyframes inn {
+  from {
+    left: 1em;
+  }
+  100% {
+    left: -4em;
+  }
+}
+
+.bb img {
+  width: 6em;
+}
+
+.icse .bb img {
+  width: 10em;
+  margin-top: 2em;
+}
+.cbse .bb img {
+  width: 10em;
+  margin-top: 2em;
+}
+.otherboard .bb img {
+  width: 10em;
+  margin-top: 2em;
+}
+.page2 {
+  display: none;
+}
+.disp {
+  animation: dispp 1s forwards;
+}
+
+@keyframes dispp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bout {
+  animation: boutt 0.7s forwards;
+}
+@keyframes boutt {
+  from {
+    right: -3em;
+  }
+  50% {
+    right: 1.7em;
+  }
+  100% {
+    right: 1em;
+  }
+}
+
+.bin {
+  animation: binn 0.7s forwards;
+}
+@keyframes binn {
+  from {
+    right: 1em;
+  }
+  100% {
+    right: -4em;
+  }
+}
+
+.up {
+  animation: upp 0.7s forwards;
+}
+@keyframes upp {
+  from {
+    top: 30px;
+  }
+  to {
+    top: -60px;
+  }
+}
+
+.down {
+  animation: downn 0.7s forwards;
+}
+@keyframes downn {
+  from {
+    top: -60px;
+  }
+  to {
+    top: 30px;
+  }
+}
+.coursedes {
+  color: white;
+  display: none;
+}
+.page2,
+.firstpage,
+#wrapper {
+  /* display: none; */
+}
+
+.link {
+  color: white;
+  padding: 0.7em 1.8em;
+  box-shadow: 0px 0px 4px 0px white inset;
+  border: 1px solid white;
+  transition: 1s all;
+  margin: auto;
+  display: block;
+  width: fit-content;
+}
+.link:hover {
+  box-shadow: 0px 0px 4px 0px white;
+  color: white;
+}
+.img {
+  width: 17em;
+  margin: auto;
+  display: block;
+}
+#title2 {
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+.p,
+.f,
+.p1,
+.f1 {
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #c3c3c3;
+}
+
+.p,
+.p1 {
+  padding: 50px;
+  display: none;
+}
+.month {
+  display: none;
+}

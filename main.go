@@ -163,7 +163,7 @@ func main() {
 			}
 			m := gomail.NewMessage()
 			m.SetHeader("From", "web@elan.org.in")
-			m.SetHeader("To", "ma18btech11011@iith.ac.in")
+			m.SetHeader("To", "cs19btech11035@iith.ac.in", "es19btech11025@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Memeify")
 			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
 			m.Attach(tempFile.Name())
@@ -1477,7 +1477,7 @@ func main() {
 		}))))
 	router.PathPrefix("/").Handler(handlers.CompressHandler(http.FileServer(http.Dir("./elan-beta-home/"))))
 
-	http.ListenAndServe(":8000", handlers.CORS(corsObj)(router))
+	http.ListenAndServe(":8080", handlers.CORS(corsObj)(router))
 }
 func getPemCert(token *jwt.Token) (string, error) {
 	cert := ""

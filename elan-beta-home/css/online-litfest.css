@@ -2134,10 +2134,14 @@ form label {
   padding: 30px;
 }
 
-.timeline-card img {
+.event-image {
   width: 100%;
 }
+.event-image img{
+  width:100%;
 
+}
+.timeline
 
 
 .coords {
@@ -2292,4 +2296,19 @@ h3.contact-event
 #page
 {
   min-height: 100vh;
+}
+.event-image
+{
+  overflow: hidden;
+}
+.timeline-card
+{
+  cursor: pointer;
+}
+.timeline-card img{
+  transition: transform .7s ease;
+}
+.timeline-card:hover img{
+  transform: scale(1.2);
+
 }

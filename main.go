@@ -9,6 +9,7 @@ import (
 	"math/rand"
 	"net/http"
 	"regexp"
+	"strings"
 	"time"
 
 	jwtmiddleware "github.com/auth0/go-jwt-middleware"
@@ -165,7 +166,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "cs19btech11035@iith.ac.in", "es19btech11025@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Memeify")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -238,7 +239,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11009@iith.ac.in", "ms19btech11012@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Sweetheart")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ENtry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -362,7 +363,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11009@iith.ac.in", "ms19btech11012@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Sweetheart")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -396,7 +397,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ep18btech11018@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Essay Writing")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -520,7 +521,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ep18btech11018@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Essay Writing")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -554,7 +555,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ch19btech11018@iith.ac.in", "ai19btech11020@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Two-line Goosebumps")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -678,7 +679,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ch19btech11018@iith.ac.in", "ai19btech11020@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Two-line Goosebumps")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -712,7 +713,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "me19btech11004@iith.ac.in", "ep19btech11010@iith.ac.in", "CH19BTECH11029@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Dear Me")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -836,7 +837,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "me19btech11004@iith.ac.in", "ep19btech11010@iith.ac.in", "CH19BTECH11029@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Dear Me")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -870,7 +871,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ms19btech11004@iith.ac.in", "ep19btech11016@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Ragtag")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -994,7 +995,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ms19btech11004@iith.ac.in", "ep19btech11016@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Rag-tag")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -1028,7 +1029,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11009@iith.ac.in", "cs19btech11035@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Review in Peace")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -1152,7 +1153,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11009@iith.ac.in", "cs19btech11035@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Review in Peace")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -1186,7 +1187,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11017@iith.ac.in", "ai19btech11004@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Plot the Twist")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -1310,7 +1311,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "es19btech11017@iith.ac.in", "ai19btech11004@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Plot the Twist")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {
@@ -1344,7 +1345,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ms19btech11004@iith.ac.in", "ce19btech11036@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Poetry")
-			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. ")
+			m.SetBody("text/html", string(fileBytes)+"<br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 
@@ -1468,7 +1469,7 @@ func main() {
 			m.SetHeader("From", "web@elan.org.in")
 			m.SetHeader("To", "ms19btech11004@iith.ac.in", "ce19btech11036@iith.ac.in")
 			m.SetHeader("Subject", "New submission for Poetry")
-			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. ")
+			m.SetBody("text/html", "The submission has been attached. <br />This is an automatically generated submission. Entry No : "+strings.Split(tempFile.Name, ".")[len(strings.Split(tempFile.Name, "."))-2])
 			m.Attach(tempFile.Name())
 			d := gomail.NewDialer("smtp.gmail.com", 587, "web@elan.org.in", "web@2020")
 			if err := d.DialAndSend(m); err != nil {

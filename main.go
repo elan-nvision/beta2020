@@ -1475,7 +1475,7 @@ func main() {
 				panic(err)
 			}
 		}))))
-	r.PathPrefix("/").Handler(handlers.CompressHandler(http.FileServer(http.Dir("./elan-beta-home/"))))
+	router.PathPrefix("/").Handler(handlers.CompressHandler(http.FileServer(http.Dir("./elan-beta-home/"))))
 
 	http.ListenAndServe(":8000", handlers.CORS(corsObj)(router))
 }

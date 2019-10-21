@@ -8,6 +8,7 @@ import (
 	"io/ioutil"
 	"math/rand"
 	"net/http"
+	"os"
 	"regexp"
 	"strings"
 	"time"
@@ -82,9 +83,10 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	db.SetMaxOpenConns(50000)
+	db.SetMaxOpenConns(5000)
 	db.SetMaxIdleConns(0)
 	db.SetConnMaxLifetime(time.Nanosecond)
+	os.Chdir("/root/go/src/beta2020")
 	fmt.Println("Set up postgre db")
 	jwtMiddleware := jwtmiddleware.New(jwtmiddleware.Options{
 		ValidationKeyGetter: func(token *jwt.Token) (interface{}, error) {

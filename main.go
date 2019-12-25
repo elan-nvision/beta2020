@@ -1482,8 +1482,7 @@ func main() {
 			}
 		}))))
 	router.PathPrefix("/").Handler(handlers.CompressHandler(http.FileServer(http.Dir("./elan-beta-home/"))))
-
-	http.ListenAndServe(":8080", handlers.CORS(corsObj)(router))
+		http.ListenAndServe(":8080", handlers.CORS(corsObj)(router))
 }
 func getPemCert(token *jwt.Token) (string, error) {
 	cert := ""

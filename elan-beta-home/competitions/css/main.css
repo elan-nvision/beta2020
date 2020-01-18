@@ -24737,8 +24737,8 @@ aside.edgtf-sidebar .widget.widget_edgtf_instagram_widget .edgtf-widget-title {
 @charset "UTF-8";
 @font-face {
     font-family: dripicons-v2;
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.eot);
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.eot?#iefix) format("embedded-opentype"), url(/wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.woff) format("woff"), url(/wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.ttf) format("truetype"), url(/wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.svg#dripicons-v2) format("svg");
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.eot);
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.eot?#iefix) format("embedded-opentype"), url(wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.woff) format("woff"), url(wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.ttf) format("truetype"), url(wp-content/themes/maree/framework/lib/icons-pack/dripicons/fonts/dripicons-v2.svg#dripicons-v2) format("svg");
     font-weight: 400;
     font-style: normal
 }
@@ -25571,8 +25571,8 @@ aside.edgtf-sidebar .widget.widget_edgtf_instagram_widget .edgtf-widget-title {
 
 @font-face {
     font-family: eleganticons;
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.eot);
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.eot?#iefix) format('embedded-opentype'), url(/wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.woff) format('woff'), url(/wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.ttf) format('truetype'), url(/wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.svg#ElegantIcons) format('svg');
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.eot);
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.eot?#iefix) format('embedded-opentype'), url(wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.woff) format('woff'), url(wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.ttf) format('truetype'), url(wp-content/themes/maree/framework/lib/icons-pack/elegant-icons/fonts/ElegantIcons.svg#ElegantIcons) format('svg');
     font-weight: 400;
     font-style: normal
 }
@@ -32714,8 +32714,8 @@ aside.edgtf-sidebar .widget.widget_edgtf_instagram_widget .edgtf-widget-title {
     font-family: "font awesome 5 brands";
     font-style: normal;
     font-weight: 400;
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.eot);
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.woff2) format("woff2"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.woff) format("woff"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.ttf) format("truetype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.svg#fontawesome) format("svg")
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.eot);
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.woff2) format("woff2"), url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.woff) format("woff"), url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.ttf) format("truetype"), url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-brands-400.svg#fontawesome) format("svg")
 }
 
 .fab {
@@ -32726,8 +32726,8 @@ aside.edgtf-sidebar .widget.widget_edgtf_instagram_widget .edgtf-widget-title {
     font-family: "font awesome 5 free";
     font-style: normal;
     font-weight: 400;
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.eot);
-    src: url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg")
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.eot);
+    src: url(wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.woff2) format("woff2"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.woff) format("woff"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.ttf) format("truetype"), url(/wp-content/themes/maree/framework/lib/icons-pack/font-awesome/webfonts/fa-regular-400.svg#fontawesome) format("svg")
 }
 
 .far {
